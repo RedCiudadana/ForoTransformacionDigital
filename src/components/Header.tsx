@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Scale, Bell } from 'lucide-react';
+import Foro from '../assets/foro.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,17 +36,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-3 group">
-              <div className={`p-2 rounded-lg transition-all duration-300 ${
-                isScrolled ? 'bg-blue-600' : 'bg-blue-600 group-hover:bg-blue-700'
-              }`}>
-                <Scale className="h-6 w-6 text-white" />
-              </div>
-              <div>
-                <h1 className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
-                  Agenda Legislativa Digital
-                </h1>
-                <p className="text-xs text-gray-600">Congreso de Guatemala</p>
-              </div>
+              <img width={400} src={Foro}/>
             </Link>
           </div>
 
