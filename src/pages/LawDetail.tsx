@@ -23,7 +23,7 @@ const LawDetail = () => {
     return (
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
         <h1 className="text-2xl font-bold text-gray-900">Ley no encontrada</h1>
-        <Link to="/" className="text-blue-600 hover:text-blue-800 mt-4 inline-block">
+        <Link to="/" className="text-blue-600 hover:text-white mt-4 inline-block">
           Volver al inicio
         </Link>
       </div>
@@ -51,7 +51,7 @@ const LawDetail = () => {
       <div className="mb-8">
         <Link 
           to="/"
-          className="inline-flex items-center text-blue-600 hover:text-blue-800 mb-4 transition-colors"
+          className="inline-flex items-center text-blue-600 hover:text-white mb-4 transition-colors"
         >
           <ArrowLeft className="h-4 w-4 mr-2" />
           Volver a iniciativas
@@ -167,7 +167,7 @@ const LawDetail = () => {
                         <div className="flex items-center space-x-4">
                           <button
                             onClick={() => setSelectedArticle(isSelected ? null : article.id)}
-                            className="text-blue-600 hover:text-blue-800 font-medium text-sm transition-colors"
+                            className="text-blue-600 hover:text-white font-medium text-sm transition-colors"
                           >
                             {isSelected ? 'Cerrar comentarios' : 'Ver comentarios'}
                           </button>
@@ -261,7 +261,7 @@ const LawDetail = () => {
             {/* Help */}
             <div className="bg-blue-50 rounded-lg p-4">
               <h4 className="font-semibold text-blue-900 mb-2">¿Cómo participar?</h4>
-              <ul className="text-sm text-blue-800 space-y-1">
+              <ul className="text-sm text-white space-y-1">
                 <li>• Lee cada artículo cuidadosamente</li>
                 <li>• Comparte comentarios constructivos</li>
                 <li>• Vota por comentarios útiles</li>

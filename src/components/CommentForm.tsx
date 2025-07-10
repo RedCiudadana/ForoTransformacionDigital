@@ -213,7 +213,7 @@ const CommentForm: React.FC<CommentFormProps> = ({
           <button
             type="button"
             onClick={() => setShowAdvanced(!showAdvanced)}
-            className="text-sm text-blue-600 hover:text-blue-800 font-medium"
+            className="text-sm text-blue-600 hover:text-white font-medium"
             disabled={isSubmitting || loading}
           >
             {showAdvanced ? 'Ocultar opciones avanzadas' : 'Mostrar opciones avanzadas'}

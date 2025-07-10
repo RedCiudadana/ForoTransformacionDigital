@@ -33,7 +33,7 @@ const NotFound = () => {
       case 'blue':
         return {
           bg: 'bg-blue-100',
-          text: 'text-blue-800',
+          text: 'text-white',
           icon: 'text-blue-600',
           hover: 'hover:bg-blue-50'
         };
@@ -180,7 +180,7 @@ const NotFound = () => {
               Si crees que esto es un error, por favor{' '}
               <a 
                 href="mailto:participacion@congreso.gob.gt" 
-                className="text-blue-600 hover:text-blue-800 underline"
+                className="text-blue-600 hover:text-white underline"
               >
                 repórtalo aquí
               </a>

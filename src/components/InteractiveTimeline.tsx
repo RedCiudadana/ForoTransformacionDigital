@@ -29,7 +29,7 @@ const InteractiveTimeline = () => {
       ],
       status: 'completed',
       icon: FileText,
-      color: 'green'
+      color: 'blue'
     },
     {
       id: 2,
@@ -44,7 +44,7 @@ const InteractiveTimeline = () => {
       ],
       status: 'current',
       icon: Users,
-      color: 'orange'
+      color: 'blue'
     },
     {
       id: 3,
@@ -74,7 +74,7 @@ const InteractiveTimeline = () => {
       ],
       status: 'upcoming',
       icon: Presentation,
-      color: 'purple'
+      color: 'blue'
     }
   ];
 
@@ -82,27 +82,27 @@ const InteractiveTimeline = () => {
     switch (status) {
       case 'completed':
         return {
-          bg: 'bg-green-100',
-          text: 'text-green-800',
-          border: 'border-green-200',
-          icon: 'text-green-600',
-          dot: 'bg-green-500'
+          bg: 'bg-blue-500',
+          text: 'text-blue-800',
+          border: 'border-blue-500',
+          icon: 'text-blue-800',
+          dot: 'bg-blue-500'
         };
       case 'current':
         return {
-          bg: 'bg-orange-100',
-          text: 'text-orange-800',
-          border: 'border-orange-200',
-          icon: 'text-orange-600',
-          dot: 'bg-orange-500'
+          bg: 'bg-blue-500',
+          text: 'text-blue-800',
+          border: 'border-blue-500',
+          icon: 'text-blue-800',
+          dot: 'bg-blue-500'
         };
       default:
         return {
-          bg: 'bg-gray-100',
-          text: 'text-gray-600',
-          border: 'border-gray-200',
-          icon: 'text-gray-400',
-          dot: 'bg-gray-300'
+          bg: 'bg-blue-500',
+          text: 'text-blue-800',
+          border: 'border-blue-500',
+          icon: 'text-blue-800',
+          dot: 'bg-blue-500'
         };
     }
   };
@@ -143,7 +143,7 @@ const InteractiveTimeline = () => {
                     </div>
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-gray-900">{phase.title}</h3>
-                      <span className={`inline-block px-3 py-1 text-sm font-medium rounded-full mt-1 ${styles.bg} ${styles.text}`}>
+                      <span className={`inline-block px-3 py-1 text-sm font-medium rounded-full mt-1 bg-blue-500 text-blue-800`}>
                         {phase.period}
                       </span>
                     </div>

@@ -31,21 +31,21 @@ const EnhancedCard: React.FC<EnhancedCardProps> = ({
         return {
           gradient: 'from-blue-500 to-blue-600',
           hover: 'hover:from-blue-600 hover:to-blue-700',
-          accent: 'text-blue-600',
-          bg: 'bg-blue-50'
+          accent: 'text-blue-800',
+          bg: 'bg-blue-500'
         };
       case 'green':
         return {
           gradient: 'from-green-500 to-green-600',
           hover: 'hover:from-green-600 hover:to-green-700',
-          accent: 'text-green-600',
+          accent: 'text-blue-800',
           bg: 'bg-green-50'
         };
       case 'purple':
         return {
           gradient: 'from-purple-500 to-purple-600',
           hover: 'hover:from-purple-600 hover:to-purple-700',
-          accent: 'text-purple-600',
+          accent: 'text-blue-800',
           bg: 'bg-purple-50'
         };
     }
@@ -63,7 +63,7 @@ const EnhancedCard: React.FC<EnhancedCardProps> = ({
             alt={title}
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
           />
-          <div className={`absolute inset-0 bg-gradient-to-br ${colors.gradient} ${colors.hover} opacity-80 group-hover:opacity-90 transition-opacity duration-300`} />
+          {/* <div className={`absolute inset-0 bg-gradient-to-br ${colors.gradient} ${colors.hover} opacity-80 group-hover:opacity-90 transition-opacity duration-300`} /> */}
           
           {/* Icon */}
           <div className="absolute top-4 left-4">
@@ -104,7 +104,7 @@ const EnhancedCard: React.FC<EnhancedCardProps> = ({
 
         {/* Content */}
         <div className="p-6">
-          <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+          <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-800 transition-colors">
             {title}
           </h3>
           <p className="text-gray-600 mb-4 line-clamp-3 leading-relaxed">
@@ -113,7 +113,7 @@ const EnhancedCard: React.FC<EnhancedCardProps> = ({
           
           {/* Action */}
           <div className="flex items-center justify-between">
-            <div className={`${colors.bg} px-3 py-1 rounded-full`}>
+            <div className={`bg-blue-500 px-3 py-1 rounded-full`}>
               <span className={`text-sm font-medium ${colors.accent}`}>
                 Participación activa
               </span>

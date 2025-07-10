@@ -59,7 +59,7 @@ const Header = () => {
             {/* Notification Bell */}
             <button className="ml-4 p-2 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors relative">
               <Bell className="h-5 w-5" />
-              <span className="absolute -top-1 -right-1 h-3 w-3 bg-orange-500 rounded-full animate-pulse"></span>
+              <span className="absolute -top-1 -right-1 h-3 w-3 bg-blue-800 rounded-full animate-pulse"></span>
             </button>
           </nav>
 
@@ -67,7 +67,7 @@ const Header = () => {
           <div className="md:hidden flex items-center space-x-2">
             <button className="p-2 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors relative">
               <Bell className="h-5 w-5" />
-              <span className="absolute -top-1 -right-1 h-2 w-2 bg-orange-500 rounded-full"></span>
+              <span className="absolute -top-1 -right-1 h-2 w-2 bg-blue-800 rounded-full"></span>
             </button>
             
             <button

@@ -225,7 +225,7 @@ const CommentSection: React.FC<CommentSectionProps> = ({ lawId, articleId, isGen
                   <div className="flex items-center space-x-2">
                     <span className="font-medium text-gray-900">{comment.author_name}</span>
                     {comment.is_expert && (
-                      <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                      <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-white">
                         <Crown className="h-3 w-3 mr-1" />
                         Experto
                       </span>

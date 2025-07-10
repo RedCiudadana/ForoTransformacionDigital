@@ -194,7 +194,7 @@ const Resources = () => {
                       </div>
                       <a
                         href={doc.url}
-                        className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium"
+                        className="inline-flex items-center text-blue-600 hover:text-white text-sm font-medium"
                       >
                         <Download className="h-4 w-4 mr-1" />
                         Descargar
@@ -230,7 +230,7 @@ const Resources = () => {
                 <p className="text-gray-600 text-sm mb-4">
                   {infographic.description}
                 </p>
-                <button className="text-blue-600 hover:text-blue-800 text-sm font-medium">
+                <button className="text-blue-600 hover:text-white text-sm font-medium">
                   Ver infografía completa
                 </button>
               </div>

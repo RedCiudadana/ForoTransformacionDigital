@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronLeft, ChevronRight, ArrowRight, Play, Users, MessageSquare, Calendar } from 'lucide-react';
+import Slider1 from '../assets/slider/SLIDER_01.png';
+import Slider2 from '../assets/slider/SLIDER_02.png';
 
 interface Slide {
   id: string;
@@ -29,7 +31,7 @@ const HeroSlider = () => {
       title: 'Participa en la',
       subtitle: 'Agenda Legislativa Digital',
       description: 'Tu voz importa en la construcción de las leyes que regularán la transformación digital de Guatemala. Únete al diálogo democrático más importante del siglo XXI.',
-      image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
+      image: Slider1,
       ctaText: 'Participa Ahora',
       ctaLink: '/ley/infraestructuras-criticas',
       secondaryCtaText: 'Ver Video Explicativo',
@@ -45,7 +47,7 @@ const HeroSlider = () => {
       title: 'Protección de',
       subtitle: 'Infraestructuras Críticas',
       description: 'Ayúdanos a definir cómo proteger los sistemas esenciales que mantienen funcionando nuestro país: energía, telecomunicaciones, transporte y más.',
-      image: 'https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
+      image: Slider2,
       ctaText: 'Revisar Propuesta',
       ctaLink: '/ley/infraestructuras-criticas',
       secondaryCtaText: 'Descargar PDF',
@@ -56,7 +58,7 @@ const HeroSlider = () => {
       title: 'Protección de',
       subtitle: 'Datos Personales',
       description: 'Contribuye a crear una ley que proteja tu privacidad y derechos digitales. Tu información personal merece la mejor protección legal.',
-      image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
+      image: Slider1,
       ctaText: 'Comentar Artículos',
       ctaLink: '/ley/proteccion-datos',
       secondaryCtaText: 'Conocer más',
@@ -67,7 +69,7 @@ const HeroSlider = () => {
       title: 'Ciberseguridad',
       subtitle: 'Nacional',
       description: 'Participa en la creación del marco institucional que protegerá a Guatemala de las amenazas cibernéticas. Tu experiencia puede marcar la diferencia.',
-      image: 'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
+      image: Slider2,
       ctaText: 'Explorar Iniciativa',
       ctaLink: '/ley/ciberseguridad',
       secondaryCtaText: 'Ver Cronograma',
@@ -121,7 +123,7 @@ const HeroSlider = () => {
               alt={slide.title}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-800/80 to-transparent"></div>
+            {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-800/80 to-transparent"></div> */}
           </div>
         ))}
       </div>
@@ -140,7 +142,7 @@ const HeroSlider = () => {
                 
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
                   <span className="block">{currentSlideData.title}</span>
-                  <span className="block text-orange-400 mt-2">
+                  <span className="block text-white mt-2">
                     {currentSlideData.subtitle}
                   </span>
                 </h1>
@@ -158,7 +160,7 @@ const HeroSlider = () => {
                     return (
                       <div key={index} className="text-center">
                         <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                          <IconComponent className="h-6 w-6 text-orange-400 mx-auto mb-2" />
+                          <IconComponent className="h-6 w-6 text-white mx-auto mb-2" />
                           <div className="text-2xl font-bold text-white">{stat.value}</div>
                           <div className="text-sm text-blue-200">{stat.label}</div>
                         </div>
@@ -172,7 +174,7 @@ const HeroSlider = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to={currentSlideData.ctaLink}
-                  className="group bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 inline-flex items-center justify-center transform hover:scale-105 hover:shadow-xl"
+                  className="group bg-blue-800 hover:bg-blue-800 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 inline-flex items-center justify-center transform hover:scale-105 hover:shadow-xl"
                 >
                   {currentSlideData.ctaText}
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -196,7 +198,7 @@ const HeroSlider = () => {
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
                   <div className="space-y-6">
                     <div className="flex items-center space-x-4">
-                      <div className="bg-orange-500 rounded-full p-3">
+                      <div className="bg-blue-800 rounded-full p-3">
                         <MessageSquare className="h-6 w-6 text-white" />
                       </div>
                       <div>
@@ -243,7 +245,7 @@ const HeroSlider = () => {
                 onClick={() => goToSlide(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   index === currentSlide
-                    ? 'bg-orange-500 w-8'
+                    ? 'bg-blue-800 w-8'
                     : 'bg-white/50 hover:bg-white/70'
                 }`}
               />
@@ -271,7 +273,7 @@ const HeroSlider = () => {
       <div className="absolute bottom-0 left-0 right-0 z-20">
         <div className="bg-white/20 h-1">
           <div
-            className="bg-orange-500 h-full transition-all duration-300"
+            className="bg-blue-800 h-full transition-all duration-300"
             style={{
               width: `${((currentSlide + 1) / slides.length) * 100}%`
             }}

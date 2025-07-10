@@ -125,7 +125,7 @@ const Calendar = () => {
   const getEventTypeStyles = (type: string) => {
     switch (type) {
       case 'virtual':
-        return 'bg-blue-100 text-blue-800';
+        return 'bg-blue-100 text-white';
       case 'presencial':
         return 'bg-green-100 text-green-800';
       case 'híbrido':

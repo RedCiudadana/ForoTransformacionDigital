@@ -7,6 +7,10 @@ import HeroSlider from '../components/HeroSlider';
 import EnhancedCard from '../components/EnhancedCard';
 import AnimatedSection from '../components/AnimatedSection';
 import InteractiveTimeline from '../components/InteractiveTimeline';
+import Linea from '../assets/LINEA.png';
+import Imagen1 from '../assets/images/IMAGEN_01.png';
+import Imagen2 from '../assets/images/IMAGEN_02.png';
+import Imagen3 from '../assets/images/IMAGEN_03.png';
 
 const Home = () => {
   const getIconComponent = (icon: string) => {
@@ -76,52 +80,28 @@ const Home = () => {
   ];
 
   const lawImages = {
-    'infraestructuras-criticas': 'https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-    'proteccion-datos': 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-    'ciberseguridad': 'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop'
+    'infraestructuras-criticas': Imagen1,
+    'proteccion-datos': Imagen2,
+    'ciberseguridad': Imagen3
   };
 
   const getStepColor = (color: string) => {
     switch (color) {
       case 'blue':
         return {
-          bg: 'bg-blue-100',
+          bg: 'bg-blue-500',
           text: 'text-blue-800',
-          icon: 'text-blue-600',
-          border: 'border-blue-200',
-          step: 'bg-blue-600'
-        };
-      case 'green':
-        return {
-          bg: 'bg-green-100',
-          text: 'text-green-800',
-          icon: 'text-green-600',
-          border: 'border-green-200',
-          step: 'bg-green-600'
-        };
-      case 'orange':
-        return {
-          bg: 'bg-orange-100',
-          text: 'text-orange-800',
-          icon: 'text-orange-600',
-          border: 'border-orange-200',
-          step: 'bg-orange-600'
-        };
-      case 'purple':
-        return {
-          bg: 'bg-purple-100',
-          text: 'text-purple-800',
-          icon: 'text-purple-600',
-          border: 'border-purple-200',
-          step: 'bg-purple-600'
+          icon: 'text-blue-800',
+          border: 'border-blue-500',
+          step: 'bg-blue-800'
         };
       default:
         return {
-          bg: 'bg-gray-100',
-          text: 'text-gray-800',
-          icon: 'text-gray-600',
-          border: 'border-gray-200',
-          step: 'bg-gray-600'
+          bg: 'bg-blue-500',
+          text: 'text-blue-800',
+          icon: 'text-blue-800',
+          border: 'border-blue-500',
+          step: 'bg-blue-800'
         };
     }
   };
@@ -141,7 +121,11 @@ const Home = () => {
             <p className="text-xl text-gray-600">
               El impacto de la participación ciudadana en tiempo real
             </p>
+            <div className="flex justify-center my-6">
+              <img src={Linea}/>
+            </div>
           </div>
+
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <LawStatsWrapper lawId="infraestructuras-criticas">
@@ -168,33 +152,33 @@ const Home = () => {
                                 value: totalParticipants,
                                 label: 'Participantes activos',
                                 description: 'Ciudadanos comprometidos',
-                                color: 'green',
+                                color: 'blue',
                                 trend: '+8% esta semana'
                               },
                               {
                                 value: 45,
                                 label: 'Días para participar',
                                 description: 'Tiempo restante del proceso',
-                                color: 'orange',
+                                color: 'blue',
                                 trend: 'Hasta septiembre 2024'
                               },
                               {
                                 value: totalExperts,
                                 label: 'Aportes de expertos',
                                 description: 'Comentarios especializados',
-                                color: 'purple',
+                                color: 'blue',
                                 trend: '+15% esta semana'
                               }
                             ].map((stat, index) => (
                               <AnimatedSection key={index} delay={index * 100}>
                                 <div className="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
                                   <div className={`w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 ${
-                                    stat.color === 'blue' ? 'bg-blue-100' :
+                                    stat.color === 'blue' ? 'bg-blue-500' :
                                     stat.color === 'green' ? 'bg-green-100' :
                                     stat.color === 'orange' ? 'bg-orange-100' : 'bg-purple-100'
                                   }`}>
                                     <span className={`text-2xl font-bold ${
-                                      stat.color === 'blue' ? 'text-blue-600' :
+                                      stat.color === 'blue' ? 'text-blue-800' :
                                       stat.color === 'green' ? 'text-green-600' :
                                       stat.color === 'orange' ? 'text-orange-600' : 'text-purple-600'
                                     }`}>
@@ -206,7 +190,7 @@ const Home = () => {
                                   </h3>
                                   <p className="text-gray-600 text-sm mb-2">{stat.description}</p>
                                   <span className={`text-xs font-medium px-2 py-1 rounded-full ${
-                                    stat.color === 'blue' ? 'bg-blue-50 text-blue-700' :
+                                    stat.color === 'blue' ? 'bg-blue-50 text-blue-800' :
                                     stat.color === 'green' ? 'bg-green-50 text-green-700' :
                                     stat.color === 'orange' ? 'bg-orange-50 text-orange-700' : 'bg-purple-50 text-purple-700'
                                   }`}>
@@ -237,6 +221,9 @@ const Home = () => {
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Explora cada propuesta legislativa, lee los artículos y comparte tus comentarios para contribuir a la construcción de mejores leyes
             </p>
+            <div className="flex justify-center my-6">
+              <img src={Linea}/>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -279,6 +266,9 @@ const Home = () => {
             <p className="text-xl text-gray-600">
               Conoce las fases del proceso y cómo puedes participar en cada etapa
             </p>
+            <div className="flex justify-center my-6">
+              <img src={Linea}/>
+            </div>
           </div>
 
           <InteractiveTimeline />
@@ -286,7 +276,7 @@ const Home = () => {
       </AnimatedSection>
 
       {/* Process Explanation */}
-      <AnimatedSection className="py-16 bg-gradient-to-br from-blue-50 to-indigo-100">
+      <AnimatedSection className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -295,6 +285,9 @@ const Home = () => {
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Sigue estos pasos sencillos para hacer que tu voz sea escuchada en la construcción de las leyes que nos afectarán a todos
             </p>
+            <div className="flex justify-center my-6">
+              <img src={Linea}/>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -365,22 +358,22 @@ const Home = () => {
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
                   <div className="text-center">
-                    <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
-                      <MessageSquare className="h-8 w-8 text-green-600" />
+                    <div className="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <MessageSquare className="h-8 w-8 text-blue-800" />
                     </div>
                     <h4 className="font-semibold text-gray-900 mb-2">Comentarios Revisados</h4>
                     <p className="text-sm text-gray-600">Todos los comentarios son analizados por expertos</p>
                   </div>
                   <div className="text-center">
-                    <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
-                      <Users className="h-8 w-8 text-blue-600" />
+                    <div className="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <Users className="h-8 w-8 text-blue-800" />
                     </div>
                     <h4 className="font-semibold text-gray-900 mb-2">Diálogo Constructivo</h4>
                     <p className="text-sm text-gray-600">Intercambio de ideas entre ciudadanos y expertos</p>
                   </div>
                   <div className="text-center">
-                    <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
-                      <CheckCircle className="h-8 w-8 text-purple-600" />
+                    <div className="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <CheckCircle className="h-8 w-8 text-blue-800" />
                     </div>
                     <h4 className="font-semibold text-gray-900 mb-2">Impacto Real</h4>
                     <p className="text-sm text-gray-600">Tus aportes pueden cambiar las leyes finales</p>
@@ -402,10 +395,13 @@ const Home = () => {
             <p className="text-xl text-blue-100 mb-8">
               Tu participación es fundamental para construir leyes que realmente sirvan a Guatemala. Únete al diálogo democrático más importante de nuestra era digital.
             </p>
+            <div className="flex justify-center my-6">
+              <img src={Linea}/>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/ley/infraestructuras-criticas"
-                className="group bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 inline-flex items-center justify-center transform hover:scale-105 hover:shadow-xl"
+                className="group bg-blue-800 hover:bg-blue-800 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 inline-flex items-center justify-center transform hover:scale-105 hover:shadow-xl"
               >
                 Comenzar a Participar
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
