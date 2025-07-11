@@ -51,7 +51,7 @@ const LawDetail = () => {
       <div className="mb-8">
         <Link 
           to="/"
-          className="inline-flex items-center text-blue-600 hover:text-white mb-4 transition-colors"
+          className="inline-flex items-center text-blue-800 hover:text-blue-700 mb-4 transition-colors"
         >
           <ArrowLeft className="h-4 w-4 mr-2" />
           Volver a iniciativas
@@ -64,7 +64,7 @@ const LawDetail = () => {
           <div className="flex flex-col sm:flex-row gap-4 items-start">
             <a
               href={law.pdfUrl}
-              className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+              className="inline-flex items-center bg-blue-800 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition-colors"
             >
               <Download className="h-5 w-5 mr-2" />
               Descargar PDF completo
@@ -90,7 +90,7 @@ const LawDetail = () => {
               }}
               className={`py-2 px-1 border-b-2 font-medium text-sm transition-colors ${
                 activeTab === 'articles'
-                  ? 'border-blue-500 text-blue-600'
+                  ? 'border-blue-500 text-blue-800'
                   : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
               }`}
             >
@@ -104,7 +104,7 @@ const LawDetail = () => {
               }}
               className={`py-2 px-1 border-b-2 font-medium text-sm transition-colors ${
                 activeTab === 'general'
-                  ? 'border-blue-500 text-blue-600'
+                  ? 'border-blue-500 text-blue-800'
                   : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
               }`}
             >
@@ -123,7 +123,7 @@ const LawDetail = () => {
               <div className="mb-6 flex justify-end">
                 <button
                   onClick={() => setShowCommentForm(!showCommentForm)}
-                  className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                  className="inline-flex items-center px-4 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue-800 transition-colors"
                 >
                   {showCommentForm ? <EyeOff className="h-4 w-4 mr-2" /> : <Eye className="h-4 w-4 mr-2" />}
                   {showCommentForm ? 'Ocultar formulario' : 'Comentar ley completa'}
@@ -167,7 +167,7 @@ const LawDetail = () => {
                         <div className="flex items-center space-x-4">
                           <button
                             onClick={() => setSelectedArticle(isSelected ? null : article.id)}
-                            className="text-blue-600 hover:text-white font-medium text-sm transition-colors"
+                            className="text-blue-800 hover:text-white font-medium text-sm transition-colors"
                           >
                             {isSelected ? 'Cerrar comentarios' : 'Ver comentarios'}
                           </button>
@@ -180,7 +180,7 @@ const LawDetail = () => {
                                 element?.scrollIntoView({ behavior: 'smooth' });
                               }, 100);
                             }}
-                            className="text-green-600 hover:text-green-800 font-medium text-sm transition-colors"
+                            className="text-blue-800 hover:text-green-800 font-medium text-sm transition-colors"
                           >
                             Comentar artículo
                           </button>
@@ -209,7 +209,7 @@ const LawDetail = () => {
                 </h2>
                 <button
                   onClick={() => setShowCommentForm(!showCommentForm)}
-                  className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                  className="inline-flex items-center px-4 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue-500 transition-colors"
                 >
                   {showCommentForm ? <EyeOff className="h-4 w-4 mr-2" /> : <Eye className="h-4 w-4 mr-2" />}
                   {showCommentForm ? 'Ocultar formulario' : 'Agregar comentario'}
@@ -260,8 +260,8 @@ const LawDetail = () => {
 
             {/* Help */}
             <div className="bg-blue-50 rounded-lg p-4">
-              <h4 className="font-semibold text-blue-900 mb-2">¿Cómo participar?</h4>
-              <ul className="text-sm text-white space-y-1">
+              <h4 className="font-semibold text-blue-800 mb-2">¿Cómo participar?</h4>
+              <ul className="text-sm text-blue-800 space-y-1">
                 <li>• Lee cada artículo cuidadosamente</li>
                 <li>• Comparte comentarios constructivos</li>
                 <li>• Vota por comentarios útiles</li>

@@ -26,29 +26,29 @@ const CommentStats: React.FC<CommentStatsProps> = ({ lawId, articleId }) => {
       label: 'Comentarios',
       value: stats.totalComments,
       icon: MessageSquare,
-      color: 'text-blue-600',
-      bgColor: 'bg-blue-100'
+      color: 'text-blue-800',
+      bgColor: 'bg-blue-500'
     },
     {
       label: 'Participantes',
       value: stats.uniqueParticipants,
       icon: Users,
-      color: 'text-green-600',
-      bgColor: 'bg-green-100'
+      color: 'text-blue-800',
+      bgColor: 'bg-blue-500'
     },
     {
       label: 'Expertos',
       value: stats.expertComments,
       icon: Award,
-      color: 'text-orange-600',
-      bgColor: 'bg-orange-100'
+      color: 'text-blue-800',
+      bgColor: 'bg-blue-500'
     },
     {
       label: 'Destacados',
       value: stats.highlightedComments,
       icon: TrendingUp,
-      color: 'text-purple-600',
-      bgColor: 'bg-purple-100'
+      color: 'text-blue-800',
+      bgColor: 'bg-blue-500'
     }
   ];
 

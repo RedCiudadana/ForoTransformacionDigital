@@ -174,7 +174,7 @@ const HeroSlider = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to={currentSlideData.ctaLink}
-                  className="group bg-blue-800 hover:bg-blue-800 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 inline-flex items-center justify-center transform hover:scale-105 hover:shadow-xl"
+                  className="group bg-blue-800 hover:bg-blue-500 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 inline-flex items-center justify-center transform hover:scale-105 hover:shadow-xl"
                 >
                   {currentSlideData.ctaText}
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

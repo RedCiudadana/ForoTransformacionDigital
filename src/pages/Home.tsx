@@ -11,6 +11,8 @@ import Linea from '../assets/LINEA.png';
 import Imagen1 from '../assets/images/IMAGEN_01.png';
 import Imagen2 from '../assets/images/IMAGEN_02.png';
 import Imagen3 from '../assets/images/IMAGEN_03.png';
+import Footer1 from '../assets/footer/footer1.png';
+import Footer2 from '../assets/footer/footer2.png';
 
 const Home = () => {
   const getIconComponent = (icon: string) => {
@@ -412,6 +414,18 @@ const Home = () => {
               >
                 Explorar Recursos
               </Link>
+            </div>
+          </div>
+        </div>
+      </AnimatedSection>
+
+      {/* Footer */}
+      <AnimatedSection className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="max-w-3xl mx-auto">
+            <div className="flex flex-row justify-center items-center gap-8">
+              <img src={Footer1} className="h-20 w-auto" />
+              <img src={Footer2} className="h-20 w-auto" />
             </div>
           </div>
         </div>
