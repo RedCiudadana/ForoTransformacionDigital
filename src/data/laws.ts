@@ -18,13 +18,13 @@ export interface Article {
 
 export const laws: Law[] = [
   {
-    id: 'infraestructuras-criticas',
-    title: 'Ley de Protección de Infraestructuras Críticas',
-    shortDescription: 'Establece el marco regulatorio para la protección de infraestructuras esenciales del país.',
-    fullDescription: 'Esta iniciativa busca crear un marco legal sólido para la identificación, protección y gestión de las infraestructuras críticas nacionales, incluyendo sistemas de energía, telecomunicaciones, transporte y servicios básicos.',
-    icon: 'shield',
-    color: 'blue',
-    pdfUrl: '/docs/infraestructuras-criticas.pdf',
+    id: 'proteccion-datos',
+    title: 'Ley de Protección de Datos Personales',
+    shortDescription: 'Regula el tratamiento de datos personales y garantiza los derechos fundamentales de privacidad.',
+    fullDescription: 'Esta iniciativa establece los principios, derechos, obligaciones y procedimientos que regulan la protección de datos personales, garantizando el derecho fundamental a la privacidad y autodeterminación informativa de las personas.',
+    icon: 'fingerprint',
+    color: 'green',
+    pdfUrl: '/docs/proteccion-datos.pdf',
     articles: [
       {
         id: 'art-1',
@@ -44,11 +44,215 @@ export const laws: Law[] = [
         title: 'Sectores estratégicos',
         content: 'Se consideran sectores estratégicos para efectos de esta ley: energía, telecomunicaciones, transporte, agua y saneamiento, salud, alimentación, servicios financieros, industria química, instalaciones gubernamentales y servicios de emergencia.'
       },
-      {
+        {
         id: 'art-4',
-        number: 'Artículo 4',
-        title: 'Autoridad competente',
-        content: 'Se crea la Comisión Nacional de Infraestructuras Críticas, como órgano rector responsable de la implementación y supervisión de las medidas establecidas en esta ley, la cual estará adscrita al Ministerio de Gobernación.'
+        number: 'Artículo 1',
+        title: 'Objeto de la ley',
+        content: 'La presente ley tiene por objeto establecer el marco normativo para la identificación, designación, protección y resiliencia de las infraestructuras críticas, con el fin de garantizar la seguridad nacional, la continuidad de los servicios esenciales y el bienestar de la población.'
+      },
+      {
+        id: 'art-5',
+        number: 'Artículo 2',
+        title: 'Definiciones',
+        content: 'Para los efectos de la presente ley se entiende por: a) Infraestructura crítica: los activos, sistemas, instalaciones, redes o servicios esenciales cuya interrupción o destrucción tendría un impacto debilitador en la seguridad, economía nacional, salud pública o seguridad, o cualquier combinación de esas materias.'
+      },
+      {
+        id: 'art-6',
+        number: 'Artículo 3',
+        title: 'Sectores estratégicos',
+        content: 'Se consideran sectores estratégicos para efectos de esta ley: energía, telecomunicaciones, transporte, agua y saneamiento, salud, alimentación, servicios financieros, industria química, instalaciones gubernamentales y servicios de emergencia.'
+      },
+      {
+        id: 'art-7',
+        number: 'Artículo 1',
+        title: 'Objeto de la ley',
+        content: 'La presente ley tiene por objeto establecer el marco normativo para la identificación, designación, protección y resiliencia de las infraestructuras críticas, con el fin de garantizar la seguridad nacional, la continuidad de los servicios esenciales y el bienestar de la población.'
+      },
+      {
+        id: 'art-8',
+        number: 'Artículo 2',
+        title: 'Definiciones',
+        content: 'Para los efectos de la presente ley se entiende por: a) Infraestructura crítica: los activos, sistemas, instalaciones, redes o servicios esenciales cuya interrupción o destrucción tendría un impacto debilitador en la seguridad, economía nacional, salud pública o seguridad, o cualquier combinación de esas materias.'
+      },
+      {
+        id: 'art-9',
+        number: 'Artículo 3',
+        title: 'Sectores estratégicos',
+        content: 'Se consideran sectores estratégicos para efectos de esta ley: energía, telecomunicaciones, transporte, agua y saneamiento, salud, alimentación, servicios financieros, industria química, instalaciones gubernamentales y servicios de emergencia.'
+      },
+        {
+        id: 'art-10',
+        number: 'Artículo 1',
+        title: 'Objeto de la ley',
+        content: 'La presente ley tiene por objeto establecer el marco normativo para la identificación, designación, protección y resiliencia de las infraestructuras críticas, con el fin de garantizar la seguridad nacional, la continuidad de los servicios esenciales y el bienestar de la población.'
+      },
+      {
+        id: 'art-11',
+        number: 'Artículo 2',
+        title: 'Definiciones',
+        content: 'Para los efectos de la presente ley se entiende por: a) Infraestructura crítica: los activos, sistemas, instalaciones, redes o servicios esenciales cuya interrupción o destrucción tendría un impacto debilitador en la seguridad, economía nacional, salud pública o seguridad, o cualquier combinación de esas materias.'
+      },
+      {
+        id: 'art-12',
+        number: 'Artículo 3',
+        title: 'Sectores estratégicos',
+        content: 'Se consideran sectores estratégicos para efectos de esta ley: energía, telecomunicaciones, transporte, agua y saneamiento, salud, alimentación, servicios financieros, industria química, instalaciones gubernamentales y servicios de emergencia.'
+      },
+      {
+        id: 'art-13',
+        number: 'Artículo 1',
+        title: 'Objeto de la ley',
+        content: 'La presente ley tiene por objeto establecer el marco normativo para la identificación, designación, protección y resiliencia de las infraestructuras críticas, con el fin de garantizar la seguridad nacional, la continuidad de los servicios esenciales y el bienestar de la población.'
+      },
+      {
+        id: 'art-14',
+        number: 'Artículo 2',
+        title: 'Definiciones',
+        content: 'Para los efectos de la presente ley se entiende por: a) Infraestructura crítica: los activos, sistemas, instalaciones, redes o servicios esenciales cuya interrupción o destrucción tendría un impacto debilitador en la seguridad, economía nacional, salud pública o seguridad, o cualquier combinación de esas materias.'
+      },
+      {
+        id: 'art-15',
+        number: 'Artículo 3',
+        title: 'Sectores estratégicos',
+        content: 'Se consideran sectores estratégicos para efectos de esta ley: energía, telecomunicaciones, transporte, agua y saneamiento, salud, alimentación, servicios financieros, industria química, instalaciones gubernamentales y servicios de emergencia.'
+      },
+        {
+        id: 'art-16',
+        number: 'Artículo 1',
+        title: 'Objeto de la ley',
+        content: 'La presente ley tiene por objeto establecer el marco normativo para la identificación, designación, protección y resiliencia de las infraestructuras críticas, con el fin de garantizar la seguridad nacional, la continuidad de los servicios esenciales y el bienestar de la población.'
+      },
+      {
+        id: 'art-17',
+        number: 'Artículo 2',
+        title: 'Definiciones',
+        content: 'Para los efectos de la presente ley se entiende por: a) Infraestructura crítica: los activos, sistemas, instalaciones, redes o servicios esenciales cuya interrupción o destrucción tendría un impacto debilitador en la seguridad, economía nacional, salud pública o seguridad, o cualquier combinación de esas materias.'
+      },
+      {
+        id: 'art-18',
+        number: 'Artículo 3',
+        title: 'Sectores estratégicos',
+        content: 'Se consideran sectores estratégicos para efectos de esta ley: energía, telecomunicaciones, transporte, agua y saneamiento, salud, alimentación, servicios financieros, industria química, instalaciones gubernamentales y servicios de emergencia.'
+      },
+      {
+        id: 'art-19',
+        number: 'Artículo 1',
+        title: 'Objeto de la ley',
+        content: 'La presente ley tiene por objeto establecer el marco normativo para la identificación, designación, protección y resiliencia de las infraestructuras críticas, con el fin de garantizar la seguridad nacional, la continuidad de los servicios esenciales y el bienestar de la población.'
+      },
+      {
+        id: 'art-20',
+        number: 'Artículo 2',
+        title: 'Definiciones',
+        content: 'Para los efectos de la presente ley se entiende por: a) Infraestructura crítica: los activos, sistemas, instalaciones, redes o servicios esenciales cuya interrupción o destrucción tendría un impacto debilitador en la seguridad, economía nacional, salud pública o seguridad, o cualquier combinación de esas materias.'
+      },
+      {
+        id: 'art-21',
+        number: 'Artículo 3',
+        title: 'Sectores estratégicos',
+        content: 'Se consideran sectores estratégicos para efectos de esta ley: energía, telecomunicaciones, transporte, agua y saneamiento, salud, alimentación, servicios financieros, industria química, instalaciones gubernamentales y servicios de emergencia.'
+      },
+        {
+        id: 'art-22',
+        number: 'Artículo 1',
+        title: 'Objeto de la ley',
+        content: 'La presente ley tiene por objeto establecer el marco normativo para la identificación, designación, protección y resiliencia de las infraestructuras críticas, con el fin de garantizar la seguridad nacional, la continuidad de los servicios esenciales y el bienestar de la población.'
+      },
+      {
+        id: 'art-23',
+        number: 'Artículo 2',
+        title: 'Definiciones',
+        content: 'Para los efectos de la presente ley se entiende por: a) Infraestructura crítica: los activos, sistemas, instalaciones, redes o servicios esenciales cuya interrupción o destrucción tendría un impacto debilitador en la seguridad, economía nacional, salud pública o seguridad, o cualquier combinación de esas materias.'
+      },
+      {
+        id: 'art-24',
+        number: 'Artículo 3',
+        title: 'Sectores estratégicos',
+        content: 'Se consideran sectores estratégicos para efectos de esta ley: energía, telecomunicaciones, transporte, agua y saneamiento, salud, alimentación, servicios financieros, industria química, instalaciones gubernamentales y servicios de emergencia.'
+      },
+      {
+        id: 'art-25',
+        number: 'Artículo 1',
+        title: 'Objeto de la ley',
+        content: 'La presente ley tiene por objeto establecer el marco normativo para la identificación, designación, protección y resiliencia de las infraestructuras críticas, con el fin de garantizar la seguridad nacional, la continuidad de los servicios esenciales y el bienestar de la población.'
+      },
+      {
+        id: 'art-26',
+        number: 'Artículo 2',
+        title: 'Definiciones',
+        content: 'Para los efectos de la presente ley se entiende por: a) Infraestructura crítica: los activos, sistemas, instalaciones, redes o servicios esenciales cuya interrupción o destrucción tendría un impacto debilitador en la seguridad, economía nacional, salud pública o seguridad, o cualquier combinación de esas materias.'
+      },
+      {
+        id: 'art-27',
+        number: 'Artículo 3',
+        title: 'Sectores estratégicos',
+        content: 'Se consideran sectores estratégicos para efectos de esta ley: energía, telecomunicaciones, transporte, agua y saneamiento, salud, alimentación, servicios financieros, industria química, instalaciones gubernamentales y servicios de emergencia.'
+      },
+        {
+        id: 'art-28',
+        number: 'Artículo 1',
+        title: 'Objeto de la ley',
+        content: 'La presente ley tiene por objeto establecer el marco normativo para la identificación, designación, protección y resiliencia de las infraestructuras críticas, con el fin de garantizar la seguridad nacional, la continuidad de los servicios esenciales y el bienestar de la población.'
+      },
+      {
+        id: 'art-29',
+        number: 'Artículo 2',
+        title: 'Definiciones',
+        content: 'Para los efectos de la presente ley se entiende por: a) Infraestructura crítica: los activos, sistemas, instalaciones, redes o servicios esenciales cuya interrupción o destrucción tendría un impacto debilitador en la seguridad, economía nacional, salud pública o seguridad, o cualquier combinación de esas materias.'
+      },
+      {
+        id: 'art-30',
+        number: 'Artículo 3',
+        title: 'Sectores estratégicos',
+        content: 'Se consideran sectores estratégicos para efectos de esta ley: energía, telecomunicaciones, transporte, agua y saneamiento, salud, alimentación, servicios financieros, industria química, instalaciones gubernamentales y servicios de emergencia.'
+      },
+      {
+        id: 'art-31',
+        number: 'Artículo 1',
+        title: 'Objeto de la ley',
+        content: 'La presente ley tiene por objeto establecer el marco normativo para la identificación, designación, protección y resiliencia de las infraestructuras críticas, con el fin de garantizar la seguridad nacional, la continuidad de los servicios esenciales y el bienestar de la población.'
+      },
+      {
+        id: 'art-32',
+        number: 'Artículo 2',
+        title: 'Definiciones',
+        content: 'Para los efectos de la presente ley se entiende por: a) Infraestructura crítica: los activos, sistemas, instalaciones, redes o servicios esenciales cuya interrupción o destrucción tendría un impacto debilitador en la seguridad, economía nacional, salud pública o seguridad, o cualquier combinación de esas materias.'
+      },
+      {
+        id: 'art-33',
+        number: 'Artículo 3',
+        title: 'Sectores estratégicos',
+        content: 'Se consideran sectores estratégicos para efectos de esta ley: energía, telecomunicaciones, transporte, agua y saneamiento, salud, alimentación, servicios financieros, industria química, instalaciones gubernamentales y servicios de emergencia.'
+      },
+        {
+        id: 'art-34',
+        number: 'Artículo 1',
+        title: 'Objeto de la ley',
+        content: 'La presente ley tiene por objeto establecer el marco normativo para la identificación, designación, protección y resiliencia de las infraestructuras críticas, con el fin de garantizar la seguridad nacional, la continuidad de los servicios esenciales y el bienestar de la población.'
+      },
+      {
+        id: 'art-35',
+        number: 'Artículo 2',
+        title: 'Definiciones',
+        content: 'Para los efectos de la presente ley se entiende por: a) Infraestructura crítica: los activos, sistemas, instalaciones, redes o servicios esenciales cuya interrupción o destrucción tendría un impacto debilitador en la seguridad, economía nacional, salud pública o seguridad, o cualquier combinación de esas materias.'
+      },
+      {
+        id: 'art-36',
+        number: 'Artículo 3',
+        title: 'Sectores estratégicos',
+        content: 'Se consideran sectores estratégicos para efectos de esta ley: energía, telecomunicaciones, transporte, agua y saneamiento, salud, alimentación, servicios financieros, industria química, instalaciones gubernamentales y servicios de emergencia.'
+      },
+      {
+        id: 'art-37',
+        number: 'Artículo 1',
+        title: 'Objeto de la ley',
+        content: 'La presente ley tiene por objeto establecer el marco normativo para la identificación, designación, protección y resiliencia de las infraestructuras críticas, con el fin de garantizar la seguridad nacional, la continuidad de los servicios esenciales y el bienestar de la población.'
+      },
+      {
+        id: 'art-38',
+        number: 'Artículo 2',
+        title: 'Definiciones',
+        content: 'Para los efectos de la presente ley se entiende por: a) Infraestructura crítica: los activos, sistemas, instalaciones, redes o servicios esenciales cuya interrupción o destrucción tendría un impacto debilitador en la seguridad, economía nacional, salud pública o seguridad, o cualquier combinación de esas materias.'
       }
     ]
   },
