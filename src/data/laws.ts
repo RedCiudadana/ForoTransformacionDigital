@@ -30,13 +30,15 @@ export const laws: Law[] = [
         id: 'art-1',
         number: 'Artículo 1',
         title: 'Objeto de la ley',
-        content: 'La presente ley tiene por objeto establecer el marco normativo para la identificación, designación, protección y resiliencia de las infraestructuras críticas, con el fin de garantizar la seguridad nacional, la continuidad de los servicios esenciales y el bienestar de la población.'
+        content: 'La presente Ley tiene por objeto proteger los datos personales de los individuos y garantizar los derechos fundamentales a la privacidad y autodeterminación informativa, relacionada a las actividades de tratamiento de datos personales realizadas por entidades responsables, ya sea públicas o privadas, dentro o fuera del territorio nacional de la República de Guatemala.'
       },
       {
         id: 'art-2',
         number: 'Artículo 2',
-        title: 'Definiciones',
-        content: 'Para los efectos de la presente ley se entiende por: a) Infraestructura crítica: los activos, sistemas, instalaciones, redes o servicios esenciales cuya interrupción o destrucción tendría un impacto debilitador en la seguridad, economía nacional, salud pública o seguridad, o cualquier combinación de esas materias.'
+        title: 'Ámbito de aplicación',
+        content: 'La presente Ley se aplicará a todo tratamiento total o parcialmente automatizado de datos personales, así como al tratamiento no automatizado de datos personales, contenidos o destinados a ser incluidos en archivos, ficheros, soportes informáticos o electrónicos, bancos, empresas o cualquier otra forma de almacenamiento de información pública o privada en custodia, depósito o administración de las entidades, públicas o privadas, que procesen datos personales de ciudadanos guatemaltecos, dentro o fuera del territorio nacional. Se regirá por lo que establece la Constitución Política de la República de Guatemala y la presente ley. 
+        No están sujetos a las disposiciones de esta ley, los asuntos militares o diplomáticos de seguridad nacional y los datos suministrados por particulares bajo garantía de confidencialidad y las disposiciones del Decreto 57-2008 del Congreso de la República de Guatemala.
+      '
       },
       {
         id: 'art-3',
@@ -256,41 +258,7 @@ export const laws: Law[] = [
       }
     ]
   },
-  {
-    id: 'proteccion-datos',
-    title: 'Ley de Protección de Datos Personales',
-    shortDescription: 'Regula el tratamiento de datos personales y garantiza los derechos fundamentales de privacidad.',
-    fullDescription: 'Esta iniciativa establece los principios, derechos, obligaciones y procedimientos que regulan la protección de datos personales, garantizando el derecho fundamental a la privacidad y autodeterminación informativa de las personas.',
-    icon: 'fingerprint',
-    color: 'green',
-    pdfUrl: '/docs/proteccion-datos.pdf',
-    articles: [
-      {
-        id: 'art-1',
-        number: 'Artículo 1',
-        title: 'Objeto y finalidad',
-        content: 'La presente ley tiene por objeto establecer los principios, derechos, obligaciones y procedimientos que regulan la protección de las personas respecto del tratamiento de sus datos personales, garantizando el ejercicio del derecho fundamental a la protección de datos personales.'
-      },
-      {
-        id: 'art-2',
-        number: 'Artículo 2',
-        title: 'Ámbito de aplicación',
-        content: 'Esta ley se aplica al tratamiento de datos personales efectuado en territorio guatemalteco por personas naturales o jurídicas, públicas o privadas, y al tratamiento efectuado fuera del territorio nacional cuando: a) El responsable o encargado del tratamiento esté establecido en Guatemala, b) Se utilicen medios ubicados en territorio guatemalteco.'
-      },
-      {
-        id: 'art-3',
-        number: 'Artículo 3',
-        title: 'Principios del tratamiento',
-        content: 'El tratamiento de datos personales se regirá por los siguientes principios: legalidad, lealtad y transparencia; limitación de la finalidad; minimización de datos; exactitud; limitación del plazo de conservación; integridad y confidencialidad; y responsabilidad proactiva.'
-      },
-      {
-        id: 'art-4',
-        number: 'Artículo 4',
-        title: 'Consentimiento',
-        content: 'El consentimiento del titular de los datos deberá ser libre, específico, informado e inequívoco. Cuando el tratamiento se base en el consentimiento, el responsable deberá poder demostrar que el titular consintió el tratamiento de sus datos personales.'
-      }
-    ]
-  },
+
   {
     id: 'ciberseguridad',
     title: 'Ley de Ciberseguridad Nacional',
