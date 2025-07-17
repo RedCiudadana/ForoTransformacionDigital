@@ -25,7 +25,7 @@ collections:
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Descripción corta", name: "shortDescription", widget: "string" }
-      - { label: "Descripción completa", name: "fullDescription", widget: "text" }
+      - { label: "Descripción completa", name: "fullDescription", widget: "markdown" }
       - label: "Icono"
         name: "icon"
         widget: "select"
@@ -48,4 +48,4 @@ collections:
           - { label: "ID", name: "id", widget: "string" }
           - { label: "Número", name: "number", widget: "string" }
           - { label: "Título", name: "title", widget: "string" }
-          - { label: "Contenido", name: "content", widget: "text" }
+          - { label: "Contenido", name: "content", widget: "markdown" }
