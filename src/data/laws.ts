@@ -36,9 +36,9 @@ export const laws: Law[] = [
         id: 'art-2',
         number: 'Artículo 2',
         title: 'Ámbito de aplicación',
-        content: 'La presente Ley se aplicará a todo tratamiento total o parcialmente automatizado de datos personales, así como al tratamiento no automatizado de datos personales, contenidos o destinados a ser incluidos en archivos, ficheros, soportes informáticos o electrónicos, bancos, empresas o cualquier otra forma de almacenamiento de información pública o privada en custodia, depósito o administración de las entidades, públicas o privadas, que procesen datos personales de ciudadanos guatemaltecos, dentro o fuera del territorio nacional. Se regirá por lo que establece la Constitución Política de la República de Guatemala y la presente ley. 
-        No están sujetos a las disposiciones de esta ley, los asuntos militares o diplomáticos de seguridad nacional y los datos suministrados por particulares bajo garantía de confidencialidad y las disposiciones del Decreto 57-2008 del Congreso de la República de Guatemala.
-      '
+        content:
+          'La presente Ley se aplicará a todo tratamiento total o parcialmente automatizado de datos personales, así como al tratamiento no automatizado de datos personales, contenidos o destinados a ser incluidos en archivos, ficheros, soportes informáticos o electrónicos, bancos, empresas o cualquier otra forma de almacenamiento de información pública o privada en custodia, depósito o administración de las entidades, públicas o privadas, que procesen datos personales de ciudadanos guatemaltecos, dentro o fuera del territorio nacional. Se regirá por lo que establece la Constitución Política de la República de Guatemala y la presente ley.\n' +
+          'No están sujetos a las disposiciones de esta ley, los asuntos militares o diplomáticos de seguridad nacional y los datos suministrados por particulares bajo garantía de confidencialidad y las disposiciones del Decreto 57-2008 del Congreso de la República de Guatemala.'
       },
         {
         id: 'art-3',
@@ -50,29 +50,28 @@ export const laws: Law[] = [
         id: 'art-4',
         number: 'Artículo 4',
         title: 'Definiciones',
-        content: '
-          Para los efectos de esta Ley, se entenderá por: 
-          a.        Datos personales: Cualquier información relacionada con una persona física identificada o identificable. 
-          b.        Datos sensibles: Datos personales que revelen origen racial o étnico, estado de salud, información genética, creencias religiosas, opiniones políticas, preferencias sexuales, entre otros. 
-          c.        Encargado del tratamiento: Persona física o jurídica, de naturaleza pública o privada, que trate datos personales por cuenta del responsable del tratamiento. 
-          d.        Portabilidad de datos: Es la capacidad de mover, copiar o transferir datos fácilmente de una base de datos, almacenamiento o entorno informático a otro, y hasta qué punto los datos pueden trasladarse fácilmente entre distintos ordenadores y entornos operativos digitales. 
-          e.        Titular de los datos: Persona física a la que se refieren los datos personales. 
-          f.        Tratamiento de datos: Cualquier operación o conjunto de operaciones realizadas sobre datos personales, ya sea por procedimientos automatizados o no, como la recolección, registro, organización, almacenamiento, conservación, elaboración, modificación, consulta, utilización, comunicación, difusión o supresión. '
-        },
+        content:
+          'Para los efectos de esta Ley, se entenderá por:\n' +
+          '- **Datos personales:** Cualquier información relacionada con una persona física identificada o identificable.\n' +
+          '- **Datos sensibles:** Datos personales que revelen origen racial o étnico, estado de salud, información genética, creencias religiosas, opiniones políticas, preferencias sexuales, entre otros.\n' +
+          '- **Encargado del tratamiento:** Persona física o jurídica, de naturaleza pública o privada, que trate datos personales por cuenta del responsable del tratamiento.\n' +
+          '- **Portabilidad de datos:** Es la capacidad de mover, copiar o transferir datos fácilmente de una base de datos, almacenamiento o entorno informático a otro, y hasta qué punto los datos pueden trasladarse fácilmente entre distintos ordenadores y entornos operativos digitales.\n' +
+          '- **Titular de los datos:** Persona física a la que se refieren los datos personales.\n' +
+          '- **Tratamiento de datos:** Cualquier operación o conjunto de operaciones realizadas sobre datos personales, ya sea por procedimientos automatizados o no, como la recolección, registro, organización, almacenamiento, conservación, elaboración, modificación, consulta, utilización, comunicación, difusión o supresión.'
+      },
       {
         id: 'art-5',
         number: 'Artículo 5',
         title: 'Principios',
-        content: '
-        Los principios que rigen la interpretación de la presente ley son:   
-          Licitud, lealtad y transparencia: Los datos personales deberán ser tratados de manera lícita, leal y transparente en relación con el titular de los datos. 
-          Limitación de la finalidad: Los datos personales se recogerán con fines determinados, explícitos y legítimos, y no serán tratados ulteriormente de manera incompatible con dichos fines. 
-          Minimización de datos: Los datos personales serán adecuados, pertinentes y limitados a lo necesario en relación con los fines para los que son tratados. 
-          Exactitud: Los datos personales serán exactos y, si fuera necesario, actualizados; se tomarán todas las medidas razonables para que se supriman o rectifiquen sin dilación los datos personales que sean inexactos con respecto a los fines para los que se tratan. 
-          Limitación del plazo de conservación: Los datos personales se mantendrán de forma que se permita la identificación de los interesados durante no más tiempo del necesario para los fines del tratamiento. 
-          Integridad y confidencialidad: Los datos personales serán tratados de manera que se garantice una seguridad adecuada, incluida la protección contra el tratamiento no autorizado o ilícito y contra su pérdida, destrucción o daño accidental, mediante la aplicación de medidas técnicas u organizativas apropiadas.  
-          Responsabilidad. Los responsables del tratamiento y manejo de los datos deberán adoptar medidas proactivas para garantizar el cumplimiento de la normativa de protección de datos y demostrar dicho cumplimiento ante la autoridad competente. 
-        '
+        content:
+          'Los principios que rigen la interpretación de la presente ley son:\n' +
+          '- **Licitud, lealtad y transparencia:** Los datos personales deberán ser tratados de manera lícita, leal y transparente en relación con el titular de los datos.\n' +
+          '- **Limitación de la finalidad:** Los datos personales se recogerán con fines determinados, explícitos y legítimos, y no serán tratados ulteriormente de manera incompatible con dichos fines.\n' +
+          '- **Minimización de datos:** Los datos personales serán adecuados, pertinentes y limitados a lo necesario en relación con los fines para los que son tratados.\n' +
+          '- **Exactitud:** Los datos personales serán exactos y, si fuera necesario, actualizados; se tomarán todas las medidas razonables para que se supriman o rectifiquen sin dilación los datos personales que sean inexactos con respecto a los fines para los que se tratan.\n' +
+          '- **Limitación del plazo de conservación:** Los datos personales se mantendrán de forma que se permita la identificación de los interesados durante no más tiempo del necesario para los fines del tratamiento.\n' +
+          '- **Integridad y confidencialidad:** Los datos personales serán tratados de manera que se garantice una seguridad adecuada, incluida la protección contra el tratamiento no autorizado o ilícito y contra su pérdida, destrucción o daño accidental, mediante la aplicación de medidas técnicas u organizativas apropiadas.\n' +
+          '- **Responsabilidad:** Los responsables del tratamiento y manejo de los datos deberán adoptar medidas proactivas para garantizar el cumplimiento de la normativa de protección de datos y demostrar dicho cumplimiento ante la autoridad competente.'
       },
       {
         id: 'art-6',
