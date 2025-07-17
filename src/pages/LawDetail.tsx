@@ -6,10 +6,12 @@ import { useComments } from '../hooks/useComments';
 import CommentSection from '../components/CommentSection';
 import CommentForm from '../components/CommentForm';
 import CommentStats from '../components/CommentStats';
+import ReactMarkdown from 'react-markdown';
 
 const LawDetail = () => {
   const { lawId } = useParams<{ lawId: string }>();
   const law = lawId ? getLawById(lawId) : null;
+  const [loading, setLoading] = useState(true);
   
   const [activeTab, setActiveTab] = useState<'articles' | 'general'>('articles');
   const [selectedArticle, setSelectedArticle] = useState<string | null>(null);
@@ -18,6 +20,14 @@ const LawDetail = () => {
   // Hooks for different comment sections
   const { addComment: addGeneralComment, loading: generalLoading } = useComments(lawId!, undefined, true);
   const { addComment: addArticleComment, loading: articleLoading } = useComments(lawId!, selectedArticle || undefined);
+
+  // useEffect(() => {
+  //   getLaws().then(laws => {
+  //     const found = laws.find(l => l.id === lawId);
+  //     setLaw(found || null);
+  //     setLoading(false);
+  //   });
+  // }, [lawId]);
 
   if (!law) {
     return (
@@ -161,7 +171,7 @@ const LawDetail = () => {
                         </div>
                         
                         <p className="text-gray-700 mb-4 leading-relaxed">
-                          {article.content}
+                          <ReactMarkdown>{article.content}</ReactMarkdown>
                         </p>
                         
                         <div className="flex items-center space-x-4">

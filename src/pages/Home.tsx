@@ -15,6 +15,10 @@ import Footer1 from '../assets/footer/footer1.png';
 import Footer2 from '../assets/footer/footer2.png';
 
 const Home = () => {
+  // Elimina el estado y efecto innecesarios
+  // Usa directamente 'laws' importado
+  // ...resto igual...
+
   const getIconComponent = (icon: string) => {
     switch (icon) {
       case 'shield': return Shield;
